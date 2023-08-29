@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'globalstyle.css' %}">
+</head>
+
+<body>
+    <section>
+        <div>
+            {% for x in fruits %}
+            <h1>{{ x }}</h1>
+            {% endfor %}
+            <p>In myfirst.css you can see what the stylesheet looks like.</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
